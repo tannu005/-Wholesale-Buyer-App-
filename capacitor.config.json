@@ -1,6 +1,12 @@
 {
-  "appId": "com.viraasat.buyer",
-  "appName": "Viraasat Buyer",
-  "webDir": "dist",
-  "bundledWebRuntime": false
+    "appId":  "com.viraasat.buyer",
+    "appName":  "Viraasat Buyer",
+    "webDir":  "dist",
+    "bundledWebRuntime":  false,
+    "plugins":  {
+                    "SplashScreen":  {
+                                         "launchShowDuration":  0,
+                                         "backgroundColor":  "#FCFCFC"
+                                     }
+                }
 }

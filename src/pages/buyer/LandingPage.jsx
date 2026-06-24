@@ -192,6 +192,10 @@ export default function LandingPage() {
 
   // Cart operations
   const addToCart = (product, quantity) => {
+    if (!user) {
+      navigate('/login');
+      return;
+    }
     if (product.stock <= 0) {
       toast.error('This item is currently out of stock.');
       return;
@@ -506,7 +510,10 @@ export default function LandingPage() {
                 <button onClick={logout} style={{ color: '#D32F2F', fontWeight: 500 }}>Sign Out</button>
               </div>
             ) : (
-              <Link to="/login" className="nav-link">Sign In</Link>
+              <Link to="/login" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-primary)', fontWeight: 500, textDecoration: 'none' }}>
+                <UserIcon size={20} style={{ strokeWidth: 1.5 }} />
+                <span className="nav-link hide-on-mobile">Sign In</span>
+              </Link>
             )}
             
             {/* Bell Icon for Notifications */}
