@@ -1,0 +1,6 @@
+{
+  "appId": "com.viraasat.buyer",
+  "appName": "Viraasat Buyer",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
