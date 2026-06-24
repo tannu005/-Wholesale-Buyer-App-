@@ -8,5 +8,8 @@
                                          "launchShowDuration":  0,
                                          "backgroundColor":  "#FCFCFC"
                                      }
-                }
+                },
+    "server":  {
+                   "cleartext":  true
+               }
 }
