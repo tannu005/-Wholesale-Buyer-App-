@@ -484,6 +484,7 @@ export default function LandingPage() {
                   onClick={() => {
                     setProfileForm({ name: user.name, email: user.email });
                     setIsProfileModalOpen(true);
+                    setIsNotificationOpen(false);
                   }}
                   className="flex items-center gap-1" 
                   style={{ 
@@ -1350,7 +1351,7 @@ export default function LandingPage() {
           position: 'fixed', 
           inset: 0, 
           backgroundColor: 'rgba(0,0,0,0.5)', 
-          zIndex: 200, 
+          zIndex: 9999, 
           display: 'flex', 
           justifyContent: 'center',
           alignItems: 'center',
