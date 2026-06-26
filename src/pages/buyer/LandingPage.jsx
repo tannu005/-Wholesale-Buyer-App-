@@ -1409,9 +1409,17 @@ export default function LandingPage() {
                 <button 
                   onClick={() => setIsEditingProfile(true)} 
                   className="btn-primary" 
-                  style={{ marginTop: '1.5rem', padding: '0.85rem' }}
+                  style={{ marginTop: '1.5rem', padding: '0.85rem', width: '100%' }}
                 >
                   Edit Profile
+                </button>
+                <button 
+                  type="button"
+                  onClick={() => setIsProfileModalOpen(false)} 
+                  className="btn-secondary" 
+                  style={{ padding: '0.85rem', width: '100%', marginTop: '0.5rem' }}
+                >
+                  Go Back
                 </button>
               </div>
             ) : (
